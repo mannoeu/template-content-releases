@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kim Petras | Turng off the light</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">
+        <img src="./assets/kim-logo.svg" alt="Kim Petras" />
+      </a>
+      <a class="menu" href="#">
+        <i data-feather="align-right"></i>
+      </a>
+    </header>
+    <main>
+      <div class="content">
+        <div class="info">
+          <h1>Turn Off the Light</h1>
+          <p>
+            is the second studio album by German singer Kim Petras. It was
+            released on 1 October 2019 through her own label, BunHead. The
+            project was announced as the extended play although it was
+            ultimately released as a full-length project comprising the eight
+            songs from the first volume and nine new songs recorded for the
+            second volume.
+          </p>
+          <p class="playAlbum">click to listen</p>
+          <div class="player">
+            <a href="#" id="control" class="playControl">
+              <i data-feather="music"></i>
+            </a>
+            <div class="songAnimation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <ul class="social">
+          <li>
+            <a
+              href="https://open.spotify.com/artist/3Xt3RrJMFv5SZkCfUE8C1J"
+              target="_blank"
+              rel="noreferrer
+              noopener
+              external"
+              ><i class="fab fa-spotify"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/kimpetras/?hl=pt-br"
+              target="_blank"
+              rel="noreferrer
+              noopener
+              external"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UChAjsnxIhU-3WZ8aSxE650A"
+              target="_blank"
+              rel="noreferrer
+              noopener
+              external"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="video">
+      <video src="./assets/bgvideo.mp4" autoplay muted loop></video>
+    </div>
+    <div id="player" class="iframe-hide"></div>
+    <script src="./js/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
