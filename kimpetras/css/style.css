@@ -19,6 +19,7 @@ svg,
 i {
   color: #afafafa9;
   transition: 0.2s linear;
+  cursor: pointer;
 }
 svg:hover,
 i:hover {
@@ -28,7 +29,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1000000000;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -44,7 +45,7 @@ header a {
 .logo img {
   width: 100%;
 }
-.menu svg {
+header .menu.playing svg {
   color: #fff;
 }
 main {

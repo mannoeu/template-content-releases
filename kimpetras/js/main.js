@@ -1,9 +1,12 @@
 const playButton = document.querySelector(".playControl");
 const songAnimation = document.querySelector(".songAnimation");
+const controlAnimation = document.querySelector(".menu");
+const bgvideo = document.querySelector("video");
 const api_key = "AIzaSyB9XbWGYorHaSfR4wbf89EkIzoKxiFo_ck";
 
 let player;
-var done = false;
+let bg_animation = true;
+let done = false;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
@@ -34,4 +37,11 @@ function getStatusPlay() {
       (songAnimation.style.opacity = "1"));
 }
 
+function backgroundAnimated() {
+  bg_animation === true ? bgvideo.pause() : bgvideo.play();
+  controlAnimation.classList.toggle("playing");
+  bg_animation = !bg_animation;
+}
+
 playButton.addEventListener("click", getStatusPlay);
+controlAnimation.addEventListener("click", backgroundAnimated);
